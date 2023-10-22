@@ -16,14 +16,14 @@ export default function App() {
       <Tab.Navigator
         initialRouteName="Home"
         tabBarOptions={{
-          activeTintColor: '#4CAF50', // Active tab color (green)
-          inactiveTintColor: 'gray', // Inactive tab color
+          activeTintColor: '#4CAF50',
+          inactiveTintColor: 'gray',
           style: {
-            backgroundColor: 'white', // Background color of the tab bar
-            borderTopWidth: 0, // Remove the default top border
+            backgroundColor: 'white',
+            borderTopWidth: 0,
           },
           labelStyle: {
-            fontSize: 12, // Font size of tab labels
+            fontSize: 12,
           },
         }}
       >
@@ -34,13 +34,13 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="home" color={color} size={size} />
             ),
-            title: 'Home', // Set the header title for this screen
+            title: 'Home',
             headerStyle: {
-              backgroundColor: '#4CAF50', // Header background color (green)
+              backgroundColor: '#4CAF50',
             },
-            headerTintColor: 'white', // Header text color
+            headerTintColor: 'white',
             headerTitleStyle: {
-              fontSize: 20, // Font size of the header title
+              fontSize: 20,
             },
           }}
         />
@@ -52,13 +52,13 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="qrcode-scan" color={color} size={size} />
             ),
-            title: 'QR Scanner', // Set the header title for this screen
+            title: 'QR Scanner',
             headerStyle: {
-              backgroundColor: '#4CAF50', // Header background color (green)
+              backgroundColor: '#4CAF50',
             },
-            headerTintColor: 'white', // Header text color
+            headerTintColor: 'white',
             headerTitleStyle: {
-              fontSize: 20, // Font size of the header title
+              fontSize: 20,
             },
           }}
         />
@@ -70,13 +70,13 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="history" color={color} size={size} />
             ),
-            title: 'QR Code History', // Set the header title for this screen
+            title: 'QR Code History',
             headerStyle: {
-              backgroundColor: '#4CAF50', // Header background color (green)
+              backgroundColor: '#4CAF50',
             },
-            headerTintColor: 'white', // Header text color
+            headerTintColor: 'white',
             headerTitleStyle: {
-              fontSize: 20, // Font size of the header title
+              fontSize: 20,
             },
           }}
         />

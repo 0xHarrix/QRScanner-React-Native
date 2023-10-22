@@ -21,7 +21,6 @@ function QRScannerScreen({ navigation, route }) {
     setScanned(true);
     setScannedData(data);
 
-    // Store the scanned QR code in AsyncStorage
     try {
       const existingHistory = await AsyncStorage.getItem('qrCodeHistory');
       const history = existingHistory ? JSON.parse(existingHistory) : [];
@@ -58,13 +57,13 @@ function QRScannerScreen({ navigation, route }) {
           <Button
             title="Open Link"
             onPress={() => openLink(scannedData)}
-            color="#4CAF50" // Modern green color
+            color="#4CAF50"
           />
           <View style={styles.buttonSpacing} />
           <Button
             title="Scan Again"
             onPress={() => resetScannedLink()}
-            color="#FF5722" // Modern red color
+            color="#FF5722"
           />
         </View>
       )}
@@ -77,7 +76,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F4F4F4', // Modern light gray background
+    backgroundColor: '#F4F4F4', 
   },
   scanner: {
     width: 300,
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
   resultText: {
     fontSize: 20,
     marginBottom: 10,
-    color: '#333', // Modern text color
+    color: '#333',
   },
   buttonSpacing: {
     marginVertical: 10,

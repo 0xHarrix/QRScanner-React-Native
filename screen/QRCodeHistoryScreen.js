@@ -66,7 +66,7 @@ function QRCodeHistoryScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F4F4F4', // Modern light gray background
+    backgroundColor: '#F4F4F4',
   },
   historyItem: {
     flexDirection: 'row',
